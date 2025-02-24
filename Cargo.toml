@@ -1,0 +1,9 @@
+[package]
+name = "ryx"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+colored = "3.0.0"
+enable-ansi-support = "0.2.1"
+xasm-rs = "0.1.11"
