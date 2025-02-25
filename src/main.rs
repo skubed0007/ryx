@@ -32,7 +32,7 @@ fn main(){
                         println!("making asm code...");
                         let asm = mk_asm(&ast);
                         println!("compiling asm code...");
-                        if let Err(shall_not_happen_if_followed_docs) = mkwnasm::compile_with_nasm(&asm){
+                        if let Err(shall_not_happen_if_followed_docs) = mkwnasm::compile_with_nasm(&asm,xasm_rs::osconfig::OsConfig::Linux_X86_64){
                             eprintln!("{}{}","failed to compile with nasm\nnexact error ~ {}".red(),shall_not_happen_if_followed_docs);
                         }
                         println!("finished! find the binary at \"./out\"");

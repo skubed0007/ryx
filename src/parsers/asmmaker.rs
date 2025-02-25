@@ -131,6 +131,6 @@ pub fn mk_asm(ast: &Vec<ast::AST>) -> String {
             _ => {}
         }
     }
-    let asm = genasm(&xasm, &xasm_rs::osconfig::OsConfig::Linux_X86_64);
+    let asm = genasm(&xasm, xasm_rs::osconfig::OsConfig::Linux_X86_64);
     asm
 }
