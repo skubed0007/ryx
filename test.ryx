@@ -1,1 +1,4 @@
-fun main(){i32 age = 1;@put(stdout,"hi");@put(stdout,"\nhello\n");}
+fun main(){
+    i32 age = 1;
+    @put(stdout,"hi");@put(stdout,"\nhello\n");
+}
